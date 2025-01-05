@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Animals - Zoo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .content-wrapper {
+            margin: 0 auto;
+            padding: 0 50px; /* Adjust padding as needed */
+            max-width: 1200px; /* Limit the width of the content */
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            color: #000000;
+        }
+        .header .logo {
+            font-size: 24px;
+            text-decoration: none;
+            color: #ff6e01 ;
+        }
+        .header .navbar a {
+            text-decoration: none;
+            color: #000000;
+            margin: 0 10px;
+        }
+        .heading {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 28px;
+            color: #444;
+        }
+        .box-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+        
+        .box {
+            min-height: 400px; /* Adjust height as needed */
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .box img {
+            width: 100%;
+            height: 350px; /* Increase the height as needed */
+            object-fit: cover; /* Ensures the image scales properly without distortion */
+            transition: transform 0.5s ease;
+        }
+        
+        .box .content {
+            padding: 30px;
+        }
+        .box h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+        .box p {
+            color: #666;
+            font-size: 14px;
+        }
+        .btn {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 8px 15px;
+            background-color: #ff6e01;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px; /* Increased for rounded edges */
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #ff9748;
+            transform: scale(1.1); /* Slightly enlarges on hover */
+        }
+        
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class = "content-wrapper">
+    <header class="header">
+        <a href="index.html" class="logo"><i class="fas fa-paw"></i> Zoo</a>
+        <nav class="navbar">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#gallery">Gallery</a>
+            <a href="index.html#animal">Animals</a>
+            <a href="index.html#pricing">Pricing</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="Explore" id="Explore">
+        <h2 class="heading">Explore Animals</h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/Elephant1.jpg" alt="Animal 1">
+                <div class="content">
+                    <h3>Elephant</h3>
+                    <p>The majestic elephant is one of the largest land animals.</p>
+                    <a href="#" class="btn">Explore More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/panda.jpg" alt="Animal 8">
+                <div class="content">
+                    <h3>Panda</h3>
+                    <p>Pandas are loved for their distinct black and white markings.</p>
+                    <a href="#" class="btn">Explore More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/polar_bear.jpg" alt="Animal 5">
+                <div class="content">
+                    <h3>Polar Bear</h3>
+                    <p>These bears are strong swimmers and thrive in Arctic regions.</p>
+                    <a href="#" class="btn">Explore More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/Lion.jpg" alt="Animal 2">
+                <div class="content">
+                    <h3>Lion</h3>
+                    <p>Known as the king of the jungle, lions are fierce predators.</p>
+                    <a href="#" class="btn">Explore More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/penguin1.jpg" alt="Animal 3">
+                <div class="content">
+                    <h3>Penguin</h3>
+                    <p>Penguins are flightless birds living in icy habitats.</p>
+                    <a href="#" class="btn">Explore More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/Giraffe.jpg" alt="Animal 4">
+                <div class="content">
+                    <h3>Giraffe</h3>
+                    <p>The tallest animals on Earth, giraffes have long necks and legs.</p>
+                    <a href="#" class="btn">Explore More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/Monkey.jpg" alt="Animal 6">
+                <div class="content">
+                    <h3>Monkey</h3>
+                    <p>Monkeys are intelligent primates found in tropical forests.</p>
+                    <a href="#" class="btn">Explore More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/Zebra.jpg" alt="Animal 7">
+                <div class="content">
+                    <h3>Zebra</h3>
+                    <p>Known for their unique black and white stripes.</p>
+                    <a href="#" class="btn">Explore More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/wolf.jpg" alt="Animal 9">
+                <div class="content">
+                    <h3>Wolf</h3>
+                    <p>Wolves are pack animals known for their howling calls.</p>
+                    <a href="#" class="btn">Explore More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/flamingo.jpg" alt="Animal 10">
+                <div class="content">
+                    <h3>Flamingo</h3>
+                    <p>These birds are famous for their bright pink color.</p>
+                    <a href="#" class="btn">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2024 ZooLife. All rights reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>

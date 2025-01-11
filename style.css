@@ -193,7 +193,7 @@ section{
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(../images/home.jpg) no-repeat;
+  background: url(home.jpg) no-repeat;
   background-size: cover;
   background-position: top;
 }
@@ -437,7 +437,7 @@ section{
 /* banner */
 
 .banner{
-  background: url(../images/banner.png) no-repeat;
+  background: url(banner.png) no-repeat;
 }
 
 .banner .row{
@@ -564,7 +564,7 @@ section{
 /* footer */
 
 .footer{
-  background: url(../images/footer.jpg) no-repeat;
+  background: url(footer.jpg) no-repeat;
   background-size: cover;
   padding: 3rem 7%;
 }
@@ -713,6 +713,4 @@ section{
   .home .content h3{
     font-size: 4rem;
   }
-  
-
 }
